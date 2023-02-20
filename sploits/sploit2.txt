@@ -8,7 +8,7 @@ When returning from a function, the %esp is restored from the saved %ebp and the
 is popped from the next location on the stack after %esp.
 Therefore, altering %esp allow us to pop a value from a different location.
 
-In the function bar, where the buffer is allocated, the %ebp is 0xbffffd98. We want this to point to 
+In the function bar(), where the buffer is allocated, the %ebp is 0xbffffd98. We want this to point to 
 a different return address we have stored. The return address is at the end of the 200 byte buffer, 
 so we want to point the ebp at 0xbffffd98-8=0xbffffd90. Funnily enough, the last byte we are changing
 the %ebp to point to is the same as the NOP operation we use (\x90). 

@@ -1,3 +1,5 @@
+.DS_Store
 *.o
+*.swp
 targets/target[0-5]
 sploits/sploit[0-5]

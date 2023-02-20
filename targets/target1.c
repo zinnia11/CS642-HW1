@@ -5,6 +5,9 @@
 int bar(char *arg, char *out)
 {
   strcpy(out, arg);
+  fprintf(stderr, "bar() addr of out hex = %x\n", out);
+  fprintf(stderr, "bar() addr of arg hex = %x\n", arg);
+  fprintf(stderr, "bar() contents of arg hex = %x\n", *arg);
   return 0;
 }
 

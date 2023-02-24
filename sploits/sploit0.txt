@@ -1,3 +1,5 @@
+Zinnia Nie (zznie)
+Sherry Wong (bwong24)
 Use this file to explain how your sploit0 works.
 
 In this sploit, we wanted to always output "Grade = A". 

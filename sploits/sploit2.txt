@@ -1,3 +1,5 @@
+Zinnia Nie (zznie)
+Sherry Wong (bwong24)
 Use this file to explain how your sploit2 works.
 
 The target2 has a length check. However, the check is incorrect as it uses <= rather than <

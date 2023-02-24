@@ -1,3 +1,5 @@
+Zinnia Nie (zznie)
+Sherry Wong (bwong24)
 Use this file to explain how your sploit4 works.
 
 The memory management functions are in tmalloc.c. Here we can understand a little about how 

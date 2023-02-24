@@ -1,3 +1,5 @@
+Zinnia Nie (zznie)
+Sherry Wong (bwong24)
 Use this file to explain how your sploit5 works.
 
 This sploit makes use of the snprintf in the target to exploit the format string vulnerability.
@@ -27,3 +29,5 @@ Begin with each byte location of the return addr location, then NOP sled, then s
 with format string "%X%X%162X%n%67X%n%48900x%n".
 
 This completed the exploit.
+
+References: https://www.exploit-db.com/docs/english/28476-linux-format-string-exploitation.pdf

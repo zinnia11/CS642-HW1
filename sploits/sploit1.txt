@@ -1,3 +1,6 @@
+Zinnia Nie (zznie)
+Sherry Wong (bwong24)
+
 This is a buffer overflow problem very similar to the one demo’d for this homework.
 Stack pointer (ESP) in the /tmp directory is 0xbffff884.
 The address of the out variable we are strcpy()’ing to is 0xbffff674.

